@@ -1,0 +1,44 @@
+
+.dynamic-txts li{
+    list-style: none;
+    Color: white; 
+    font-size: 25px; 
+    font-weight: 400; 
+    top: 0; 
+    position: relative; 
+    animation: slide 39s steps(13) infinite; 
+}
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    line-height: 45px;
+    height: 45px;
+    background: black;
+    overflow: hidden;
+}
+
+.dynamic-txts li::after{
+    content: ""; 
+    position: absolute; 
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+    animation: typing 3s steps(10) infinite; 
+}
+
+@keyframes typing {
+    40%,
+    60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+@keyframes slide {
+    100%{
+        top: -580px; 
+    }
+}

@@ -1,0 +1,61 @@
+.contenter {
+    /* width: 90%; */
+    margin: 30px auto; 
+}
+
+.carousel {
+    border: 2px solid #ccc;
+    /* height: 400px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    height: 500%; 
+    display: flex; 
+    width: 700%;
+    transition: all .8s;
+}
+
+.slider section{
+    flex-basis: 100%; 
+    /* display: flex;  */
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    position: absolute; 
+    top: 50%; 
+    cursor: pointer;
+}
+
+.controls .arrowLeft{
+    margin-left: 1px; 
+} 
+
+.controls .arrowRight{
+    margin-left: 520px; 
+} 
+
+.controls li{
+    width: 20px;
+    height: 20px;
+    left: 50%; 
+    transform: translate(110px, 0px);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    list-style: none;
+    background: white;
+    cursor: pointer;
+}
+
+.controls .displayIndex{
+    transform: rotate(-90deg); 
+    margin: 450px;  
+    align-items: center;
+}
+
+.controls .displayIndex .selected{
+    background: transparent; 
+}
