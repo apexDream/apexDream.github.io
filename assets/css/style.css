@@ -67,6 +67,20 @@ header a{
 .carousel .list .item .topic{
     color: #f1683a;
 }
+
+.carousel .list .item .des{
+    font-size: 1.5em;
+}
+
+.carousel .list .item .game{
+    margin-left: 90%;
+    margin-top: -300px;
+}
+
+.carousel .list .item .gameGA{
+    margin-left: 90%;
+    margin-top: -150px;
+}
 .carousel .list .item .buttons{
     display: grid;
     grid-template-columns: repeat(2, 130px);
@@ -160,7 +174,9 @@ header a{
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
 .carousel .list .item:nth-child(1) .content .des,
-.carousel .list .item:nth-child(1) .content .buttons
+.carousel .list .item:nth-child(1) .content .buttons,
+.carousel .list .item:nth-child(1) .content .game,
+.carousel .list .item:nth-child(1) .content .gameGA
 {
     transform: translateY(50px);
     filter: blur(20px);
@@ -185,6 +201,12 @@ header a{
 }
 .carousel .list .item:nth-child(1) .content .buttons{
     animation-delay: 1.8s!important;
+}
+.carousel .list .item:nth-child(1) .content .game{
+    animation-delay: 2s!important;
+}
+.carousel .list .item:nth-child(1) .content .gameGA{
+    animation-delay: 2s!important;
 }
 /* create animation when next click */
 .carousel.next .list .item:nth-child(1) img{
@@ -286,7 +308,9 @@ header a{
 .carousel.prev .list .item:nth-child(2) .content .title,
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .des,
-.carousel.prev .list .item:nth-child(2) .content .buttons
+.carousel.prev .list .item:nth-child(2) .content .buttons,
+.carousel.prev .list .item:nth-child(2) .content .game,
+.carousel.prev .list .item:nth-child(2) .content .gameGA
 {
     animation: contentOut 1.5s linear 1 forwards!important;
 }
